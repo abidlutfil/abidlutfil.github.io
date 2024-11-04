@@ -3,62 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+  <script>  let name = prompt("Siapa nama anda?");
+
+
+    if (name) {
+        alert(`Hi ${name}, mari belajar`);
+    } else {
+        alert("Hi, mari belajar");
+    }
+    </script>
+
+    <title>KSK2013</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset and basic styling */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f3f4f6;
             color: #333;
+            line-height: 1.6;
         }
 
-        header {
-            background-color: #FFC0CB;
-            color: white;
+        /* Header styling */
+        .header {
+            background-color: #6a0dad;
+            color: #fff;
             padding: 20px;
             text-align: center;
         }
 
-        main {
-            padding: 20px;
-            text-align: center;
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
         }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        .header p {
+            font-size: 1.2rem;
         }
 
-        a {
-            color: #4CAF50;
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            background: linear-gradient(135deg, #ff5db1, #6a0dad);
+            color: #fff;
+            padding: 50px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero a {
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #6a0dad;
             text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .hero a:hover {
+            background-color: #6a0dad;
+            color: #fff;
         }
+
+       
+        .courses {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .courses h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #6a0dad;
+        }
+
+        .course-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .course-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .course-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .course-card-content {
+            padding: 20px;
+        }
+
+        .course-card-content h4 {
+            font-size: 1.5rem;
+            color: #6a0dad;
+            margin-bottom: 10px;
+        }
+
+        .course-card-content p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .course-card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff5db1;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .course-card a:hover {
+            background-color: #6a0dad;
+        }
+
+ 
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>abidlutfil website</h1>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>KSK2013</h1>
+        <p>PEMASANGAN PERISIAN SISTEM KOMPUTER</p>
     </header>
 
-    <main>
-        <p>Welcome to our homepage. Explore our services and get to know more about what we offer.</p>
-        <p><a href="#contact">Contact Us</a> to learn more.</p>
-    </main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Pengenalan Sistem Operasi</h2>
+        <a href="home.html">MULA</a>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 Our Company. All rights reserved.</p>
-    </footer>
+    <!-- Courses Section -->
+    <section class="courses">
+        <div class="course-cards">
+            <!-- Course Card 1 -->
+            <div class="course-card">
+                <img src="https://www.unixmen.com/wp-content/uploads/2012/11/unix-logo.jpg" alt="Sumber Terbuka Course">
+                <div class="course-card-content">
+                    <h4>Sumber Terbuka</h4>
+       
+                    <a href="Sumber_terbuka.html">mula</a>
+                </div>
+            </div>
+
+            <!-- Course Card 2 -->
+            <div class="course-card">
+                <img src="https://static.wikia.nocookie.net/ultraverse/images/2/24/Mac_OS_Logo.png/revision/latest?cb=20200114005517" alt="Berlesen Course">
+                <div class="course-card-content">
+                    <h4>Berlesen</h4>
+         
+                    <a href="Berlesen.html">mula</a>
+                </div>
+            </div>
+
+            <!-- Course Card 3 -->
+            <div class="course-card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi64CWH1y4ayJmj9XDsopJISOJiKR2B2hyvM_JkUc-11Sp_KeMtP6foSmIWLdp0uX8tFwdvDsiuf5UgQQ0zW8vha809tksI1sq1FyWvgFhkGXdhFgMed0pdo3FvcpslSGeKAUtm6Mn8i2c/s1600/Operating+Systems.jpg" alt="Fungsi Sistem Operasi Course">
+                <div class="course-card-content">
+                    <h4>Fungsi Sistem Operasi</h4>
+                    <a href="Fungsi_sistem_operasi.html">mula</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
 </body>
 </html>
